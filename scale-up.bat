@@ -1,2 +1,2 @@
 @echo off
-docker-compose up -d --scale app=3
+docker-compose up -d --build --scale app=3
