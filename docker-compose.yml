@@ -11,8 +11,8 @@ services:
     image: nginx:latest
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./error_page.html:/usr/share/nginx/html/error_page.html:ro
     depends_on:
       - app
     ports:
       - "80:80"
-
